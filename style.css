@@ -1,0 +1,796 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: europa, "Yu Gothic", "ヒラギノ角ゴ ProN W3",
+    "Hiragino kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+/* モーダル制御用 */
+body.js_fixed {
+  position: fixed;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header_anchor {
+  margin-top: 150px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+h3 {
+  margin-bottom: 40px;
+}
+
+.sp_br {
+  display: none;
+}
+
+a {
+  color: #666;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+/*------ header ここから------*/
+
+header {
+  width: 100%;
+  height: 25vh;
+  min-height: 100px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header_left h1 {
+  height: 150px;
+  width: 150px;
+  margin: 12px;
+  text-align: center;
+  background: #ccc;
+  border-radius: 100px;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.header_left h1 a {
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+header li a {
+  display: block;
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+header li a:hover {
+  transform: scale(1.3);
+  text-decoration: underline;
+}
+
+.js_header_fixed {
+  height: 100px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .js_header_h1 {
+  height: 90px;
+  width: 90px;
+  font-size: 0.8rem;
+}
+
+/*------ key_visual ここから------*/
+
+.key_visual {
+  background-image: url(images/kv.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+
+.key_visual h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 10px 10px 5px #999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*------about ここから------*/
+
+.about {
+  width: 100%;
+  height: 100%;
+  padding: 150px 0 100px;
+  background-color: #eee;
+}
+
+.about .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about_wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.about_left {
+  width: 40%;
+  text-align: center;
+}
+
+.about_left img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.about_left p {
+  width: 80%;
+  font-size: 2rem;
+  margin: 1rem auto;
+  border-bottom: 1px solid #000;
+}
+
+.about_right {
+  width: calc(60% - 40px);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.about_right p {
+  padding-bottom: 1rem;
+}
+
+/*------skill ここから------*/
+
+.skill {
+  width: 100%;
+  height: 100%;
+  padding: 150px 0 100px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.skill .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill p {
+  margin-bottom: 40px;
+}
+
+.skill ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill li {
+  width: calc(100% / 3);
+}
+
+.skill_list .fab {
+  font-size: 8rem;
+  color: #333;
+}
+
+/*------works ここから------*/
+
+.works {
+  width: 100%;
+  height: 100%;
+  padding: 150px 0 100px;
+  text-align: center;
+}
+
+.works .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.work_item {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.work_item .work_img {
+  color: #666;
+  transition: all 0.3s ease-out;
+}
+
+.work_item .work_img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px #999;
+  border-top: 1px solid #000;
+  transition: all 0.3s ease-out;
+}
+
+.work_item .work_txt {
+  width: calc(30% - 8px);
+}
+
+.work_item h4 {
+  text-align: center;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  border-bottom: 1px dotted #333;
+}
+
+.work_item .fa-twitter-square {
+  font-size: 2rem;
+}
+
+.work_item .work_img {
+  width: calc(70% - 8px);
+  height: 100%;
+  padding: 4px;
+  border: 1px solid #666;
+  border-radius: 8px;
+}
+
+.work_item img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*------work_modal 挙動関係 ここから------*/
+
+.works .works_modal_content h4,
+.works .works_modal_content p {
+  display: inline-block;
+}
+
+.modal_wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.modal_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 90%;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.modal_content p {
+  margin-bottom: 20px;
+}
+
+.modal_content img {
+  width: 100%;
+}
+
+.close_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 5;
+  position: fixed;
+  top: 7%;
+  right: 17%;
+  color: #999;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.close_btn:after {
+  display: block;
+  padding: 2px;
+  content: "\f057";
+  font-family: FontAwesome;
+}
+
+.modal_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/*------contact ここから------*/
+
+.contact {
+  width: 100%;
+  padding-top: 150px;
+}
+
+.contact h3 {
+  text-align: center;
+}
+
+.contact .form {
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact_label {
+  font-size: 0.9rem;
+}
+
+.contact .form_group {
+  margin: 5px 0 20px;
+}
+
+.contact input,
+.contact textarea {
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.contact input {
+  height: 40px;
+  padding: 0 5px;
+}
+
+.contact textarea {
+  height: 180px;
+  padding: 5px;
+}
+
+.contact .submit {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 32px;
+}
+
+.contact .contact_btn {
+  display: block;
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.contact_btn:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.contact .confirm .form_group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-bottom: 1px dotted #ccc;
+}
+
+.contact .confirm td.contact_label {
+  width: 160px;
+}
+
+.contact .confirm td.confirm_txt {
+  width: 380px;
+}
+
+.contact .confirm_m {
+  font-size: 0.8rem;
+  margin: 20px 0;
+}
+
+.contact p {
+  font-size: 0.8rem;
+}
+
+.contact .complete_m {
+  text-align: center;
+}
+
+.contact .area_msg {
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  padding-top: 4px;
+}
+
+.contact .err > input,
+.contact .err > textarea {
+  background: #f7dcd9;
+}
+
+/*------フッター ここから------*/
+footer {
+  width: 100%;
+  padding-top: 60px;
+}
+
+footer p {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+.page_contact footer {
+  padding-top: 40px;
+}
+
+/*------バリデーションチェック用 ここから------*/
+.check {
+  font-size: 0.8rem;
+  margin-left: 10px;
+  color: #ff4d4d;
+}
+
+/*エラー時*/
+.has_error input,
+.has_error textarea {
+  border: 2px solid #ff4d4d;
+}
+
+/*-------「TOPに戻る」ボタン ここから--------*/
+#page_top {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 60px;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+/*------------------------------------*/
+/*-------レスポンシブ部分 ここから--------*/
+/*------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .header_anchor {
+    margin-top: 50px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    margin-bottom: 32px;
+  }
+
+  .sp_br {
+    display: block;
+  }
+
+  /*------【レスポンシブ】header ここから------*/
+
+  header {
+    height: 100px;
+  }
+
+  .header_left h1 {
+    height: 50px;
+  }
+
+  header .header_right {
+    transform: translateX(100%);
+    opacity: 0;
+    margin: 0;
+    display: block;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.5s ease-out;
+    overflow-y: auto;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  header li {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    line-height: 100px;
+  }
+
+  header li:nth-child(1) {
+    border-top: 1px solid #000;
+  }
+
+  header li a {
+    padding: 0 50px;
+    color: #000;
+    font-size: 1.5rem;
+  }
+
+  header .js_header_h1 {
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  /*------【レスポンシブ】ハンバーガーメニュー ここから------*/
+
+  header .hamburger {
+    position: absolute;
+    right: 16px;
+    clear: both;
+    display: block;
+  }
+
+  header .hamburger_icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  header .hamburger_icon i {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header .hamburger_icon i:nth-child(1) {
+    top: 0;
+  }
+
+  header .hamburger_icon i:nth-child(2) {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+
+  header .hamburger_icon i:nth-child(3) {
+    bottom: 0;
+  }
+
+  header .hamburger.op ~ .header_right {
+    z-index: 99;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  header .hamburger.op i:nth-child(1) {
+    margin: auto;
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  header .hamburger.op i:nth-child(2) {
+    display: none;
+  }
+
+  header .hamburger.op i:nth-child(3) {
+    margin: auto;
+    transform: rotate(-45deg);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  /*------ 【レスポンシブ】key_visual ここから------*/
+
+  .key_visual {
+    background-position: top;
+    height: 100vh;
+  }
+
+  .key_visual h1 {
+    text-shadow: 5px 5px 5px #bbb;
+    top: 30%;
+  }
+
+  /*------【レスポンシブ】about ここから------*/
+
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .about_wrapper {
+    display: block;
+  }
+
+  .about_left {
+    width: 100%;
+  }
+
+  .about_left img {
+    width: 60%;
+  }
+
+  .about_left p {
+    width: 60%;
+  }
+
+  .about_right {
+    width: 100%;
+  }
+
+  /*------【レスポンシブ】skill ここから------*/
+
+  .skill {
+    padding-bottom: 60px;
+  }
+
+  .skill p {
+    margin-bottom: 40px;
+  }
+
+  .skill ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skill li {
+    width: 50%;
+  }
+
+  .skill_list .fab {
+    font-size: 6rem;
+  }
+
+  /*------【レスポンシブ】works ここから------*/
+
+  .works {
+    padding-bottom: 60px;
+  }
+
+  .work_item {
+    margin-top: 60px;
+    display: block;
+  }
+
+  .work_item .work_txt {
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .work_item h4 {
+    padding-bottom: 8px;
+  }
+
+  .work_item .work_img {
+    width: 100%;
+    box-shadow: 0 4px 4px #999;
+  }
+
+  .work_txt .twitter_icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  /*------【レスポンシブ】work_modal 挙動関係 ここから------*/
+
+  .modal_content {
+    width: 90%;
+    padding: 12px 20px;
+  }
+
+  .close_btn {
+    top: 8%;
+    right: 8%;
+  }
+
+  /*------【レスポンシブ】contact ここから------*/
+
+  .contact .form {
+    width: 90%;
+  }
+
+  .contact .form_group {
+    margin-bottom: 10px;
+  }
+
+  .contact .submit {
+    margin-top: 16px;
+  }
+
+  .contact .contact_btn {
+    width: 160px;
+  }
+
+  .contact .confirm td.contact_label {
+    width: 128px;
+  }
+
+  .contact .confirm td.confirm_txt {
+    width: 220px;
+  }
+
+  /*-------【レスポンシブ】「TOPに戻る」ボタン ここから--------*/
+  #page_top {
+    font-size: 0.8rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

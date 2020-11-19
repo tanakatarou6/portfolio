@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- HTML Meta Tags -->
+    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="35歳未経験から、プログラミング学習で転職を目的として制作したポートフォリオです。"
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="MyPortfolio" />
+    <meta
+      itemprop="description"
+      content="35歳未経験から、プログラミング学習で転職を目的として制作したポートフォリオです。"
+    />
+    <meta itemprop="image" content="https://tanakatarou6.com/images/w05s.png" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://tanakatarou6.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MyPortfolio" />
+    <meta
+      property="og:description"
+      content="35歳未経験から、プログラミング学習で転職を目的として制作したポートフォリオです。"
+    />
+    <meta
+      property="og:image"
+      content="https://tanakatarou6.com/images/w05s.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MyPortfolio" />
+    <meta
+      name="twitter:description"
+      content="35歳未経験から、プログラミング学習で転職を目的として制作したポートフォリオです。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://tanakatarou6.com/images/w05s.png"
+    />
+
+    <!-- link -->
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <!-------- header -------->
+    <header class="header">
+      <div class="container">
+        <div class="header_left">
+          <h1 class="header_h1">
+            <a href="index.html">Kazuya's<br />Portfolio</a>
+          </h1>
+        </div>
+        <div class="hamburger">
+          <span class="hamburger_icon">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+        <div class="header_right">
+          <ul>
+            <li><a href="#">TOP</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skill">SKILLS</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
+            <li>
+              <a
+                href="https://twitter.com/tanakatarou590"
+                target="_blank"
+                class="twitter_icon"
+                ><i class="fab fa-twitter-square twitter">Twitter</i></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-------- key_visual -------->
+    <div class="key_visual header_anchor">
+      <div class="container">
+        <h1>My Portfolio</h1>
+      </div>
+    </div>
+
+    <!-------- about -------->
+    <div id="about" class="about">
+      <div class="container">
+        <h2>ABOUT</h2>
+        <div class="about_wrapper">
+          <div class="about_left">
+            <img src="images/pic.jpg" />
+            <p>Kazuya <br class="sp_br" />Ishikawa</p>
+          </div>
+          <div class="about_right">
+            <p>生まれも育ちも新潟県</p>
+            <p>
+              2019年、独学でプログラミングを学習を開始、プログラミングの楽しさにハマる。
+            </p>
+            <p>現在も毎日コツコツ学習継続中、今後も成長に期待。</p>
+            <p>任された仕事には精一杯取り組み、やり遂げます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------- skill -------->
+    <div id="skill" class="skill">
+      <div class="container">
+        <h2>SKILL</h2>
+        <h3>今後さらに増える予定</h3>
+        <ul class="skill_list">
+          <li>
+            <i class="fab fa-html5"></i>
+            <p>HTML5</p>
+          </li>
+          <li>
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS3</p>
+          </li>
+          <li>
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript<br />(jQuery)</p>
+          </li>
+          <li>
+            <i class="fab fa-php"></i>
+            <p>PHP</p>
+          </li>
+          <li>
+            <i class="fab fa-wordpress"></i>
+            <p>WordPress</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-------- works -------->
+    <div id="works" class="works">
+      <div class="container">
+        <h2>WORKS</h2>
+        <h3>画像をクリックすると拡大します</h3>
+
+        <div class="work_item">
+          <div class="work_txt">
+            <h4>LP模写①</h4>
+            <p>架空企業サイト</p>
+            <p>html5/css3</p>
+          </div>
+          <div class="work_img modal_popup js_modal_popup">
+            <img src="images/w01s.png" />
+          </div>
+          <div class="modal_wrapper js_modal_wrapper">
+            <div class="modal_content">
+              <h4>LP模写①/<br class="sp_br" />架空企業サイト</h4>
+              <p>
+                初めて模写に挑戦したものです。<br
+                  class="sp_br"
+                />完成まで12時間程度かかりました。
+              </p>
+              <img src="images/w01.png" />
+            </div>
+            <div class="modal_bg js_modal_bg"></div>
+            <div class="close_btn modal_close js_modal_close"></div>
+          </div>
+        </div>
+
+        <div class="work_item">
+          <div class="work_txt">
+            <h4>LP模写②</h4>
+            <p>忍者CODE様<br />鎧模写</p>
+            <a
+              href="https://twitter.com/ninjacodeee"
+              target="_blank"
+              class="twitter_icon"
+              ><i class="fab fa-twitter-square twitter"></i
+            ></a>
+            <p>html5/css3/jQuery</p>
+          </div>
+          <div class="work_img modal_popup js_modal_popup">
+            <img src="images/w02s.png" />
+          </div>
+          <div class="modal_wrapper js_modal_wrapper">
+            <div class="modal_content">
+              <h4>LP模写②/<br class="sp_br" />忍者CODE様 鎧模写</h4>
+              <p>
+                2回目の模写です。<br class="sp_br" />レスポンシブ、モーダル、<br
+                  class="sp_br"
+                />アコーディオンなどを学びました。<br />完成まで20時間程度かかりました。
+              </p>
+              <img src="images/w02.png" />
+            </div>
+            <div class="modal_bg js_modal_bg"></div>
+            <div class="close_btn modal_close js_modal_close"></div>
+          </div>
+        </div>
+
+        <div class="work_item">
+          <div class="work_txt">
+            <h4>ホームページ製作</h4>
+            <p>オンラインサロン ハゼブロ<br />TOPページコーディング</p>
+            <p>html5/css3/jQuery</p>
+          </div>
+          <div class="work_img modal_popup js_modal_popup">
+            <img src="images/w03s.png" />
+          </div>
+          <div class="modal_wrapper js_modal_wrapper">
+            <div class="modal_content">
+              <h4>ホームページ製作/<br class="sp_br" />ハセブロ TOPページ</h4>
+              <p>
+                AdobeXDのデザインカンプから製作で、初めてのチーム製作でした。<br />1ページのコーディングだったので3時間程度で完成しました。
+              </p>
+              <img src="images/w03.png" />
+            </div>
+            <div class="modal_bg js_modal_bg"></div>
+            <div class="close_btn modal_close js_modal_close"></div>
+          </div>
+        </div>
+
+        <div class="work_item">
+          <div class="work_txt">
+            <h4>LP製作・公開</h4>
+            <p>
+              <a href="https://cckaryuudo.com/" target="_blank"
+                >理髪店<br />カット倶楽部 刈流人 様</a
+              >
+            </p>
+            <a
+              href="https://twitter.com/cc_karyuudo"
+              target="_blank"
+              class="twitter_icon"
+              ><i class="fab fa-twitter-square twitter"></i
+            ></a>
+            <p>html5/css3/jQuery</p>
+          </div>
+          <div class="work_img modal_popup js_modal_popup">
+            <img src="images/w04s.png" />
+          </div>
+          <div class="modal_wrapper js_modal_wrapper">
+            <div class="modal_content">
+              <h4>LP製作・公開/<br class="sp_br" />カット倶楽部 刈流人 様</h4>
+              <p>
+                LP製作に加えてレンタルサーバー契約・独自ドメイン取得・ページ公開まで<br
+                  class="sp_br"
+                />やらせていただきました。
+              </p>
+              <img src="images/w04.png" />
+            </div>
+            <div class="modal_bg js_modal_bg"></div>
+            <div class="close_btn modal_close js_modal_close"></div>
+          </div>
+        </div>
+
+        <div class="work_item">
+          <div class="work_txt">
+            <h4>ポートフォリオ製作</h4>
+            <p>自分自身のポートフォリオです</p>
+            <p>html5/css3/JavaScript/jQuery/PHP</p>
+          </div>
+          <div class="work_img modal_popup js_modal_popup">
+            <img src="images/w05s.png" />
+          </div>
+          <div class="modal_wrapper js_modal_wrapper">
+            <div class="modal_content">
+              <h4>
+                ポートフォリオ製作/<br
+                  class="sp_br"
+                />自分自身のポートフォリオです
+              </h4>
+              <p>
+                現在までに学習したことを全て使って<br
+                  class="sp_br"
+                />作成したポートフォリオです。<br />お問い合わせフォームはPHPで作成し、<br
+                  class="sp_br"
+                />実際にメールも送信されます。<br />今後も更新していく予定です。
+              </p>
+              <img src="images/w05.png" />
+            </div>
+            <div class="modal_bg js_modal_bg"></div>
+            <div class="close_btn modal_close js_modal_close"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------- footer -------->
+    <footer id="footer">
+      <p>©︎2020 Kazuya Ishikawa All Rights Reserved.</p>
+    </footer>
+
+    <!-------- Back to Top -------->
+    <div id="page_top">TOP</div>
+
+    <!-------- script -------->
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/b67d86aedc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
