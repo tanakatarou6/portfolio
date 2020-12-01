@@ -42,6 +42,12 @@ a {
 
 .twitter {
   color: #1da1f2;
+  font-size: 3rem;
+}
+
+.github {
+  color: #4b4b4b;
+  font-size: 3rem;
 }
 
 /*------ header ここから------*/
@@ -230,6 +236,10 @@ header .js_header_h1 {
   text-align: center;
 }
 
+.works a {
+  text-decoration: underline;
+}
+
 .works .container {
   width: 80%;
   margin: 0 auto;
@@ -246,6 +256,7 @@ header .js_header_h1 {
 .work_item .work_img {
   color: #666;
   transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 
 .work_item .work_img:hover {
@@ -466,6 +477,17 @@ header .js_header_h1 {
 footer {
   width: 100%;
   padding-top: 60px;
+}
+
+footer .footer_nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+footer .footer_nav li {
+  padding: 0 20px;
+  padding-bottom: 20px;
 }
 
 footer p {
