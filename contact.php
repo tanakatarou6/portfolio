@@ -153,9 +153,6 @@ if ($page_flg === 2) {
           <li><a href="index.html#skill">SKILLS</a></li>
           <li><a href="index.html#works">WORKS</a></li>
           <li><a href="contact.php">CONTACT</a></li>
-          <li>
-            <a href="https://twitter.com/tanakatarou590" target="_blank" class="twitter_icon"><i class="fab fa-twitter-square twitter">Twitter</i></a>
-          </li>
         </ul>
       </div>
     </div>
