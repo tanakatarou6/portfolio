@@ -527,6 +527,12 @@ footer p {
   right: 50px;
   cursor: pointer;
   display: none;
+  transition: all 0.5s;
+}
+
+#page_top:hover {
+  background: #333;
+  color: #fff;
 }
 
 /*------------------------------------*/
