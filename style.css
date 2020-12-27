@@ -283,10 +283,15 @@ header .js_header_h1 {
 
 .work_item .work_img {
   width: calc(70% - 8px);
-  height: 100%;
+  height: 40vh;
   padding: 4px;
   border: 1px solid #666;
   border-radius: 8px;
+}
+
+.work_item .work_img img {
+  height: 100%;
+  object-position: top;
 }
 
 .work_item img {
@@ -765,6 +770,7 @@ footer p {
 
   .work_item .work_img {
     width: 100%;
+    height: 30vh;
     box-shadow: 0 4px 4px #999;
   }
 
