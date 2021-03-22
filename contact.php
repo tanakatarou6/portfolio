@@ -180,7 +180,7 @@ if ($page_flg === 2) {
           </div>
           <div class="form_group <?php if (!empty($err_msg['email'])) echo 'err' ?>">
             <label for="email" class="contact_label">メールアドレス</label><span class="check"></span>
-            <input type="text" id="email" class="valid_email" name="email" placeholder="example:sample@sample.com" value="<?php if (!empty($_POST['email'])) echo $_POST['email']; ?>" />
+            <div style="border:1px solid #999; width: 300px; height: 100px;" contenteditable="true" type="text" id="email" class="valid_email" name="email" placeholder="example:sample@sample.com" value="<?php if (!empty($_POST['email'])) echo $_POST['email']; ?>" />
             <div class="area_msg">
               <?php if (!empty($err_msg['email'])) echo $err_msg['email']; ?>
             </div>
